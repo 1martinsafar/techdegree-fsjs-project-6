@@ -20,8 +20,21 @@ app.use(bodyParser.json());
                         MAIN CODE
 ========================================================================= */
 
+app.use("/static", express.static("public"));
+
 // Using pug template engine
 app.set("view engine", "pug");
+
+app.get("/", (req, res) => {
+  res.render("app");
+});
+
+
+
+
+
+
+
 
 // Catch 404 and forward to error handler
 app.use((req, res, next) => {

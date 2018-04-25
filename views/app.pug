@@ -1,0 +1,11 @@
+extends layout
+
+block main
+  include includes/form.pug
+
+  div(class="bounds app--body")
+    include includes/header-content.pug
+
+    include includes/tweets.pug
+    include includes/friends.pug
+    include includes/messages.pug
